@@ -4,22 +4,22 @@
 </p>
 
 
-##  material.nvim
+##  asciiville.nvim
 
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
 
 
-The original [Material](https://material-theme.site) theme now available for [NeoVim](https://neovim.io/)
+The original [Asciiville](https://asciiville-theme.site) theme now available for [NeoVim](https://neovim.io/)
 
 ---
 
 </div>
 
 ## 🔱 Info
-A port of [Material](https://material-theme.site) colorscheme for NeoVim written in Lua
+A port of [Asciiville](https://asciiville-theme.site) colorscheme for NeoVim written in Lua
 
-Material.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
+Asciiville.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
 added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ## 🌊 Features
@@ -74,7 +74,7 @@ Install via your favourite package manager:
 
 ```lua
 -- If you are using Packer
-use 'marko-cerovac/material.nvim'
+use 'marko-cerovac/asciiville.nvim'
 ```
 
 ## 🐬 Usage
@@ -83,11 +83,11 @@ Enable the colorscheme:
 
 ```lua
 --Lua:
-vim.cmd 'colorscheme material'
+vim.cmd 'colorscheme asciiville'
 ```
 
 
-For a comlete guide on usage and configuration of the theme, see ```:help material.nvim```.
+For a comlete guide on usage and configuration of the theme, see ```:help asciiville.nvim```.
 
 ## ⚙️ Configuration
 
@@ -102,14 +102,14 @@ Set the desired style using:
 
 ```lua
 --Lua:
-vim.g.material_style = "deep ocean"
+vim.g.asciiville_style = "deep ocean"
 ```
 
 The configuration of different options is done trough a setup function
 
 This is an example of the function with the default values
 ```lua
-require('material').setup({
+require('asciiville').setup({
 
     contrast = {
         terminal = false, -- Enable contrast for the built-in terminal
@@ -175,15 +175,15 @@ require('material').setup({
 
 After passing the configuration to a setup function, make sure to enable the colorscheme:
 ```lua
-vim.cmd 'colorscheme material'
+vim.cmd 'colorscheme asciiville'
 ```
 
 This is an example of overwriting the default highlights and colors (most users will never need to do this)
 ```lua
-local material = require 'material'
-local colors = require 'material.colors'
+local asciiville = require 'asciiville'
+local colors = require 'asciiville.colors'
 
-material.setup{
+asciiville.setup{
     custom_highlights = {
         LineNr = { bg = '#FF0000' }
         CursorLine = { fg = colors.editor.constrast , underline = true },
@@ -207,7 +207,7 @@ material.setup{
 
     -- Custom colors must be a function that takes in the default colors table as
     -- a paramter, and then modifies them.
-    -- To se the available colors, see lua/material/colors/init.lua
+    -- To se the available colors, see lua/asciiville/colors/init.lua
     custom_colors = function(colors)
         colors.editor.bg = "#SOME_COLOR"
         colors.main.purple = "#SOME_COLOR"
@@ -216,38 +216,38 @@ material.setup{
 }
 ```
 
-To enable the lualine themes, first set the theme in your lualine settings to `auto` or `material`
+To enable the lualine themes, first set the theme in your lualine settings to `auto` or `asciiville`
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
     theme = 'auto'
     or
-    theme = 'material'
+    theme = 'asciiville'
     -- ... your lualine config
   }
 }
 ```
 Then, choose the style trough a variable called ```lualine_style``` in the theme setup function
 ```lua
-require('material').setup({
+require('asciiville').setup({
     lualine_style = 'default' -- the default style
     or
     lualine_style = 'stealth' -- the stealth style
 })
 ```
 
-If the theme, doesn't look right, it's probably because material.nvim is being loaded before lualine,
-causing the other material theme that comes built-in to lualine to be used.
-To fix this, either load material.nvim after lualine (preferred way)
+If the theme, doesn't look right, it's probably because asciiville.nvim is being loaded before lualine,
+causing the other asciiville theme that comes built-in to lualine to be used.
+To fix this, either load asciiville.nvim after lualine (preferred way)
 or set the lualine theme to one of these two values in your lualine settings
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'material-nvim' -- the default style
+    theme = 'asciiville-nvim' -- the default style
     or
-    theme = 'material-stealth' -- the stealth style
+    theme = 'asciiville-stealth' -- the stealth style
     -- ... your lualine config
   }
 }
@@ -259,23 +259,23 @@ require('lualine').setup {
 
 ![telescope_finder](https://user-images.githubusercontent.com/76592799/191139931-579be597-f176-4dd4-af52-eb2c496c3607.png)
 ```vim
-:lua require("material.functions").find_style()
+:lua require("asciiville.functions").find_style()
 ```
 
 
 + Cycle trough styles
 ```vim
-:lua require('material.functions').toggle_style()
+:lua require('asciiville.functions').toggle_style()
 ```
 
 
 + Toggle the end of buffer lines ( ~ )
 ```vim
-:lua require('material.functions').toggle_eob()
+:lua require('asciiville.functions').toggle_eob()
 ```
 
 
 + Change the style to a desired one using the function change_style("desired style")
 ```vim
-:lua require('material.functions').change_style("palenight")
+:lua require('asciiville.functions').change_style("palenight")
 ```

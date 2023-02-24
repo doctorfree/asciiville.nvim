@@ -1,10 +1,6 @@
- <div align="center">
-<p align="center">
-  <img width="302" height="302" src="https://user-images.githubusercontent.com/76592799/150905447-8ae16047-4646-4f54-b122-a5f85ef59782.png">
-</p>
-
 ##  asciiville.nvim
 
+ <div align="center">
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
 
@@ -15,10 +11,10 @@ This repository is a fork of the [Material theme](https://github.com/marko-cerov
 </div>
 
 ## 🔱 Info
-A port of the [Material](https://github.com/marko-cerovac/material.nvim.git) colorscheme for NeoVim written in Lua
+A port of the [Material](https://github.com/marko-cerovac/material.nvim.git) colorscheme for Neovim written in Lua
 
 Asciiville.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
-added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
+added to Neovim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ## 🌊 Features
 
@@ -44,7 +40,7 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
 
 + Ability to select styles using [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
-+ Added functions for live theme switching without the need to restart NeoVim
++ Added functions for live theme switching without the need to restart Neovim
 
 + Two [Lualine](https://github.com/hoob3rt/lualine.nvim) themes
 
@@ -156,7 +152,7 @@ require('asciiville').setup({
     disable = {
         colored_cursor = false, -- Disable the colored cursor
         borders = false, -- Disable borders between verticaly split windows
-        background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
+        background = false, -- Prevent the theme from setting the background (Neovim then uses your terminal background)
         term_colors = false, -- Prevent the theme from setting terminal colors
         eob_lines = false -- Hide the end-of-buffer lines
     },

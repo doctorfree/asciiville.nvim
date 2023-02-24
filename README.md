@@ -3,21 +3,19 @@
   <img width="302" height="302" src="https://user-images.githubusercontent.com/76592799/150905447-8ae16047-4646-4f54-b122-a5f85ef59782.png">
 </p>
 
-
 ##  asciiville.nvim
 
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
 
-
-The original [Asciiville](https://asciiville-theme.site) theme now available for [NeoVim](https://neovim.io/)
+This repository is a fork of the [Material theme](https://github.com/marko-cerovac/material.nvim.git) customized for use with [Asciiville](https://github.com/doctorfree/Asciiville#readme).
 
 ---
 
 </div>
 
 ## 🔱 Info
-A port of [Asciiville](https://asciiville-theme.site) colorscheme for NeoVim written in Lua
+A port of the [Material](https://github.com/marko-cerovac/material.nvim.git) colorscheme for NeoVim written in Lua
 
 Asciiville.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
 added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -56,7 +54,7 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
     ![default-deep-ocean](https://user-images.githubusercontent.com/76592799/152083521-a0951e57-53aa-4d1a-8b3b-d374e74eae3e.jpg)
     ![default-palenight](https://user-images.githubusercontent.com/76592799/152083524-3c618c5b-f3f2-480d-8890-a8c36a356e08.png)
     ![default-lighter](https://user-images.githubusercontent.com/76592799/152083531-ae9f5b3f-4b24-4ab6-a974-e5662d1deaca.png)
-    
+
     + Stealth
     ![stealth-oceanic](https://user-images.githubusercontent.com/76592799/152083543-bd887c52-c05e-4913-bab0-5de99bac76df.png)
     ![stealth-darker](https://user-images.githubusercontent.com/76592799/152083585-c8ea9e62-8188-4935-911b-c5da818aa93f.png)
@@ -72,9 +70,14 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
 
 Install via your favourite package manager:
 
+```vim
+-- If you are using Plug
+Plug 'doctorfree/asciiville.nvim'
+```
+
 ```lua
 -- If you are using Packer
-use 'marko-cerovac/asciiville.nvim'
+use 'doctorfree/asciiville.nvim'
 ```
 
 ## 🐬 Usage
